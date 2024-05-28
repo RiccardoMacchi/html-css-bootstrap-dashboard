@@ -15,13 +15,13 @@
 <body>
 <!-- Menu laterale -->
     <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-2 min-vh-100 bg-dark d-flex flex-column justify-content-between">
+        <div class="row ms_pad">
+            <div class="col-auto col-md-2 ms_high bg-dark d-flex flex-column justify-content-between">
                 <div>
-                    <ul class="nav nav-pills flex-column mt-5">
-                        <li><a href=""><i class="fa-solid fa-house me-2"></i><span class="d-none d-sm-inline">Home</span></a></li>
-                        <li><a href=""><i class="fa-solid fa-chart-simple me-2"></i><span class="d-none d-sm-inline">Stats</span></a></li>
-                        <li><a href=""><i class="fa-solid fa-signal me-2"></i><span class="d-none d-sm-inline">Signals</span></a></li>
+                    <ul class="nav nav-pills flex-column">
+                        <li><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-house me-2"></i><span class="d-none d-sm-inline">Home</span></a></li>
+                        <li><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-chart-simple me-2"></i><span class="d-none d-sm-inline">Stats</span></a></li>
+                        <li><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-signal me-2"></i><span class="d-none d-sm-inline">Signals</span></a></li>
                     </ul>
                 </div>
                 <div>
@@ -29,7 +29,7 @@
                 </div>
             </div>
 <!-- Colonna di destra -->
-            <div class="col flex-grow-1 flex-wrap p-0">
+            <div class="col flex-grow-1 flex-wrap p-0 ms_high">
 <!-- Prima sezione blue -->
                 <section id="blue">
                     <div class="row row-cols-1 row-cols-sm-3 justify-content-between">
@@ -46,85 +46,88 @@
                     <div class="row">
 <!-- Prima colonna Classi e FAQ -->
                         <div class="col-12 col-md-8">
-<!-- Riga Classi -->
-                            <div class="row">
-                                <div class="col">
-                                    <div id="nextclass">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h2>Prossime Classi</h2>
+<!-- Riga Classi -->        
+                            <div class="wrapperclassic">  
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="nextclass">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h2>Prossime Classi</h2>
+                                                </div>
                                             </div>
-                                        </div>
-<!-- Riga intestazione -->
-                                        <div class="row">
-                                            <div class="col">
-                                                <span>Nome</span>
+    <!-- Riga intestazione -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span>Nome</span>
+                                                </div>
+                                                <div class="d-none col-md-auto d-md-inline">
+                                                    <span>Data inizio</span>
+                                                </div>
+                                                <div class="d-none col-md-auto d-md-inline">
+                                                    <span>ROI</span>
+                                                </div>
+                                                <div class="col-2">
+                                                    <span>Stato</span>
+                                                </div>
+                                                <div class="col-2">
+                                                    <span>Azioni</span>
+                                                </div>
                                             </div>
-                                            <div class="d-none col-md-auto d-md-inline">
-                                                <span>Data inizio</span>
-                                            </div>
-                                            <div class="d-none col-md-auto d-md-inline">
-                                                <span>ROI</span>
-                                            </div>
-                                            <div class="col-2">
-                                                <span>Stato</span>
-                                            </div>
-                                            <div class="col-2">
-                                                <span>Azioni</span>
-                                            </div>
-                                        </div>
-        <!-- Riga esplicativa con dati -->
-                                        <div class="row">
-                                            <div class="col">
-                                                <span>Nome</span>
-                                            </div>
-                                            <div class="d-none col-md-auto d-md-inline">
-                                                <span>Data inizio</span>
-                                            </div>
-                                            <div class="d-none col-md-auto d-md-inline">
-                                                <span>ROI</span>
-                                            </div>
-                                            <div class="col-2">
-                                                <span>Stato</span>
-                                            </div>
-                                            <div class="col-2">
-                                                <span>Azioni</span>
+            <!-- Riga esplicativa con dati -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span>Nome</span>
+                                                </div>
+                                                <div class="d-none col-md-auto d-md-inline">
+                                                    <span>Data inizio</span>
+                                                </div>
+                                                <div class="d-none col-md-auto d-md-inline">
+                                                    <span>ROI</span>
+                                                </div>
+                                                <div class="col-2">
+                                                    <span>Stato</span>
+                                                </div>
+                                                <div class="col-2">
+                                                    <span>Azioni</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 <!-- Riga FAQ -->
-                            <div class="row">
-                                <div class="col">
-                                    <div id="faq">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h2>F.A.Q.</h2>
+                            <div class="wrapperclassic">
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="faq">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h2>F.A.Q.</h2>
+                                                </div>
                                             </div>
-                                        </div>
-            <!-- Domande -->
-                                        <div class="row">
-                                            <div class="col-11">Question</div>
-                                            <div class="col-1"><i class="fa-solid fa-chevron-down"></i></div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-11">Question</div>
-                                            <div class="col-1"><i class="fa-solid fa-chevron-down"></i></div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-11">Question</div>
-                                            <div class="col-1"><i class="fa-solid fa-chevron-down"></i></div>
+                <!-- Domande -->
+                                            <div class="row">
+                                                <div class="col-11">Question</div>
+                                                <div class="col-1"><i class="fa-solid fa-chevron-down"></i></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-11">Question</div>
+                                                <div class="col-1"><i class="fa-solid fa-chevron-down"></i></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-11">Question</div>
+                                                <div class="col-1"><i class="fa-solid fa-chevron-down"></i></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
 <!-- Seconda colonna desktop -->
                         <div class="col-12 col-md-4">
                             <!-- Todo -->       
-                            <div class="wrappertodo">
+                            <div class="wrapperclassic">
                                 <div class="row">
                                     <div class="col-12">
                                         <h2>Todo</h2>
@@ -140,48 +143,27 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-<!-- 
-                        <div class="col d-none col-md-4 d-md-inline">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h2>Todo</h2>
-                                    <div>
-                                        <input type="checkbox"> <span>Kickoff nuove classi</span>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox"> <span>Kickoff nuove classi</span>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox"> <span>Kickoff nuove classi</span>
+<!-- Sezione grafico -->
+                            <div class="wrapperclassic">
+                                <div class="row">
+                                    <div class="col">
+                                        <div>
+                                            <img src="img/stats.jpeg" alt="stats">
+                                        </div>
+                                        <h3>Utenti Attivi</h3>
+                                        <span>Lista degli utenti attivi in piattaforma nell'utlimo mese</span>
+                                        <ul>
+                                            <li>Gennaio: 1200</li>
+                                            <li>Febbraio: 800</li>
+                                            <li>Marzo: 1500</li>
+                                        </ul>
+                                        <a href="">Visualizza report approfondito</a>
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-                    
-                    
-
-
-
-
-<!-- Sezione grafico -->
-                    <div class="row">
-                        <div class="col col-md-4">
-                            <div>
-                                <img src="img/stats.jpeg" alt="stats">
-                            </div>
-                            <h3>Utenti Attivi</h3>
-                            <span>Lista degli utenti attivi in piattaforma nell'utlimo mese</span>
-                            <ul>
-                                <li>Gennaio: 1200</li>
-                                <li>Febbraio: 800</li>
-                                <li>Marzo: 1500</li>
-                            </ul>
-                            <a href="">Visualizza report approfondito</a>
                         </div>
-
                     </div>
+
                 </section>
             </div>
         </div>

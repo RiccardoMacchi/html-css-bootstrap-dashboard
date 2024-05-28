@@ -6,3 +6,26 @@ img {
     background-color: #1b72e8;
     width: 100%;
 }
+
+i {
+    width: 25px;
+}
+
+
+/* Regole generali blocchi */
+
+.wrapperclassic{
+    border: 1px solid grey;
+
+}
+
+/* Regole navbar */
+
+.ms_pad{
+    padding-top: 35px;
+}
+
+.ms_high {
+    height: calc(100vh - 35px);
+    overflow: auto;
+}
