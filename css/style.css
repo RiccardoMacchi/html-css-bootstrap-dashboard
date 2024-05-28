@@ -21,11 +21,34 @@ i {
 
 /* Regole navbar */
 
-.ms_pad{
-    padding-top: 35px;
+.ms_high {
+    height: calc(100vh - 56px);
+    overflow: auto;
 }
 
-.ms_high {
-    height: calc(100vh - 35px);
-    overflow: auto;
+.ms_search {
+    width: 100%;
+}
+
+/* Regole next class */
+
+.ms_avatarclass img {
+    max-width: 30px;
+}
+
+.ms_action {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.ms_action i {
+    position: absolute;
+    color: grey;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
 }

@@ -13,6 +13,34 @@
     <title>Document</title>
 </head>
 <body>
+<!-- Barra di ricerca -->
+<nav class="navbar bg-light d-flex">
+    <div class="container-fluid">
+        <div class="row ms_search">
+            <div class="col-2">
+                <a class="navbar-brand" href="#">Navbar</a>
+            </div>
+            <div class="col-8">
+                <div id="ms_search">
+                    <form class="ms_search" role="search">
+                        <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Prova a cercare: Lezioni di Laravel"
+                      aria-label="Search"/>
+                    </form>
+                </div>
+            </div>
+            <div class="col-2">
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
 <!-- Menu laterale -->
     <div class="container-fluid">
         <div class="row ms_pad">
@@ -25,7 +53,7 @@
                     </ul>
                 </div>
                 <div>
-                    <a href=""><i class="fa-solid fa-gear me-2"></i><span class="d-none d-sm-inline">Settings</span></a>
+                    <a href="" class="text-white text-decoration-none"><i class="fa-solid fa-gear me-2"></i><span class="d-none d-sm-inline">Settings</span></a>
                 </div>
             </div>
 <!-- Colonna di destra -->
@@ -75,21 +103,29 @@
                                                 </div>
                                             </div>
             <!-- Riga esplicativa con dati -->
-                                            <div class="row">
+                                            <div class="row align-items-center">
                                                 <div class="col">
-                                                    <span>Nome</span>
+                                                    <div class="ms_avatarclass">
+                                                        <img src="img/class-avatar.jpg" class="rounded-circle" alt="">
+                                                        <span>Classe 75</span>
+                                                    </div>
                                                 </div>
                                                 <div class="d-none col-md-auto d-md-inline">
-                                                    <span>Data inizio</span>
+                                                    <span>15 Feb 2021</span>
                                                 </div>
                                                 <div class="d-none col-md-auto d-md-inline">
-                                                    <span>ROI</span>
+                                                    <span>20%</span>
                                                 </div>
                                                 <div class="col-2">
-                                                    <span>Stato</span>
+                                                    <button type="button" class="btn btn-success">Done</button>
                                                 </div>
                                                 <div class="col-2">
-                                                    <span>Azioni</span>
+                                                    <div class="ms_action">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </div>
+                                                    <div class="ms_action">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
