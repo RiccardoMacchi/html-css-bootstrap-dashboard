@@ -26,6 +26,7 @@ i {
     width: 100%;
     background-color: #f7f7f7;
     border-bottom: 2px solid #cecccc;
+    padding-left: 20px;
 }
 
 /* Regole navbar */
@@ -131,7 +132,7 @@ i {
 
 
 /* Form a comparsa */
-
+/* 
 #ms_formcomarsa {
     width: 50%;
     height: 100%;
@@ -145,7 +146,7 @@ i {
 
 #ms_formin {
     transform: translateX(0%);
-}
+} */
 
 .ms_allb_wh {
     border: 1px solid white;
