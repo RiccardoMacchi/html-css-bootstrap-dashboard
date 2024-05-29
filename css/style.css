@@ -54,7 +54,8 @@ i {
 
 .ms_high {
     height: calc(100vh - 56px);
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .ms_navbg {
