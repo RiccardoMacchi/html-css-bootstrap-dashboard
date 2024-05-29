@@ -11,9 +11,24 @@ i {
     width: 25px;
 }
 
+/* Regole menu ricerca */
+
+.ms_search {
+    width: 100%;
+}
+
+.ms_search i {
+    color: #5b5858;
+}
+
+#ms_orange {
+    color: #ff8f00;
+}
+
+
 /* Regole boolean menu */
 .ms_bg_pills {
-    background-color: rgba(0, 0, 0, 0.3);;
+    background-color: rgba(0, 0, 0, 0.2);;
 }
 
 /* Regole generali blocchi */
@@ -42,20 +57,14 @@ i {
     overflow: auto;
 }
 
-.ms_search {
-    width: 100%;
-}
-
-.ms_search i {
-    color: #5b5858;
-}
-
-#ms_orange {
-    color: #ff8f00;
-}
-
 .ms_navbg {
     background-image: url(../img/sidebar-bg.png);
+}
+
+/* Effetti hover navbar */
+
+.ms_navbg li:hover{
+    background-color: rgba(255, 255, 255, 0.2)
 }
 
 
@@ -162,3 +171,6 @@ i {
     border: 1px solid white;
     border-radius: 5px;
 }
+
+
+/* Come modificare margine tra colonne */
