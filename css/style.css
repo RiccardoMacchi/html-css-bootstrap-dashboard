@@ -128,3 +128,26 @@ i {
 .ms_light_button {
     padding: 0px 4px;
 }
+
+
+/* Form a comparsa */
+
+#ms_formcomarsa {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 200;
+    transition: .3s;
+    transform: translateX(-100%);
+}
+
+#ms_formin {
+    transform: translateX(0%);
+}
+
+.ms_allb_wh {
+    border: 1px solid white;
+    border-radius: 5px;
+}
