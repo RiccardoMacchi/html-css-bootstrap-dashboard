@@ -14,32 +14,42 @@
 </head>
 <body>
 <!-- Barra di ricerca -->
-<nav class="navbar bg-light d-flex">
-    <div class="container-fluid">
-        <div class="row ms_search">
-            <div class="col-2">
-                <a class="navbar-brand" href="#">Navbar</a>
-            </div>
-            <div class="col-8">
-                <div id="ms_search">
-                    <form class="ms_search" role="search">
-                        <input
-                      class="form-control me-2"
-                      type="search"
-                      placeholder="Prova a cercare: Lezioni di Laravel"
-                      aria-label="Search"/>
-                    </form>
+    <nav class="navbar bg-light d-flex">
+        <div class="container-fluid">
+            <div class="row align-items-center text-center ms_search">
+                <div class="col-auto">
+                    <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="col-auto flex-grow-1">
+                    <div id="ms_search">
+                        <form class="ms_search" role="search">
+                            <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Prova a cercare: Lezioni di Laravel"
+                        aria-label="Search"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <a href=""><i class="fa-solid fa-list-ul d-none d-md-inline-block"></i></a>
+                    <a href=""><i class="fa-solid fa-circle-question d-none d-md-inline-block"></i></a>
+                    <a href=""><i class="fa-solid fa-ellipsis-vertical d-none d-md-inline-block"></i></a>
+                    <div id="ms_dropdownmenu">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell" id="ms_orange"></i>
+                          </a>
+                          <ul class="dropdown-menu" id="ms_dropmenu_position">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                          </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col-2">
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-            </div>
         </div>
-    </div>
-</nav>
-
+    </nav>
 
 <!-- Menu laterale -->
     <div class="container-fluid">
@@ -78,14 +88,14 @@
                             <div class="wrapperclassic">  
                                 <div class="row">
                                     <div class="col">
-                                        <div id="nextclass">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h2>Prossime Classi</h2>
-                                                </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h2>Prossime Classi</h2>
                                             </div>
-    <!-- Riga intestazione -->
-                                            <div class="row">
+                                        </div>
+<!-- Riga intestazione -->
+                                        <div id="nextclass">
+                                            <div class="row pb-1 mb-1 ms_bb_grey">
                                                 <div class="col">
                                                     <span>Nome</span>
                                                 </div>
@@ -103,7 +113,7 @@
                                                 </div>
                                             </div>
             <!-- Riga esplicativa con dati -->
-                                            <div class="row align-items-center">
+                                            <div class="row align-items-center pb-1 mb-1 ms_bb_grey">
                                                 <div class="col">
                                                     <div class="ms_avatarclass">
                                                         <img src="img/class-avatar.jpg" class="rounded-circle" alt="">
@@ -117,7 +127,7 @@
                                                     <span>20%</span>
                                                 </div>
                                                 <div class="col-2">
-                                                    <button type="button" class="btn btn-success">Done</button>
+                                                    <button type="button" class="btn btn-success ms_light_button">Done</button>
                                                 </div>
                                                 <div class="col-2">
                                                     <div class="ms_action">
@@ -167,36 +177,47 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <h2>Todo</h2>
-                                        <div>
-                                            <input type="checkbox"> <span>Kickoff nuove classi</span>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox"> <span>Kickoff nuove classi</span>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox"> <span>Kickoff nuove classi</span>
+                                        <div class="ms_wrapperline">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <form action="todo" method="post">
+                                                        <ul>
+                                                            <li><input type="checkbox" class="ms-1 me-1"><label for="kick">Kickoff nuove classi</label></li>
+                                                            <div class="ms_divline mb-1"></div>
+                                                            <li><input type="checkbox" class="ms-1 me-1"><label for="kick">Lezione su Bootstrap 5 in classe #128</label></li>
+                                                            <div class="ms_divline mt-1"></div>
+                                                            <li><input type="checkbox" class="ms-1 me-1"><label for="kick">Controllare username github utenti</label></li>
+                                                        </ul>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 <!-- Sezione grafico -->
                             <div class="wrapperclassic">
-                                <div class="row">
+                                <div class="ms_wrapperline">
                                     <div class="col">
                                         <div>
                                             <img src="img/stats.jpeg" alt="stats">
                                         </div>
                                         <h3>Utenti Attivi</h3>
                                         <span>Lista degli utenti attivi in piattaforma nell'utlimo mese</span>
-                                        <ul>
+                                        <ul class="mt-2">
+                                            <div class="ms_divline"></div>
                                             <li>Gennaio: 1200</li>
+                                            <div class="ms_divline"></div>
                                             <li>Febbraio: 800</li>
+                                            <div class="ms_divline"></div>
                                             <li>Marzo: 1500</li>
                                         </ul>
+                                        <div class="ms_divline"></div>
                                         <a href="">Visualizza report approfondito</a>
                                     </div>
                                 </div>
-                            </div>
+                                </div>
+
                         </div>
                     </div>
 

@@ -15,8 +15,17 @@ i {
 /* Regole generali blocchi */
 
 .wrapperclassic{
-    border: 1px solid grey;
+    border: 2px solid #cecccc;
+    border-radius: 5px;
+    margin: 20px 10px;
 
+}
+
+.wrapperclassic h2 {
+    display: inline-block;
+    width: 100%;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #cecccc;
 }
 
 /* Regole navbar */
@@ -30,7 +39,32 @@ i {
     width: 100%;
 }
 
+.ms_search i {
+    color: #5b5858;
+}
+
+#ms_orange {
+    color: #ff8f00;
+}
+
+
+/* Regole dropdown menu */
+#ms_dropdownmenu {
+    display: inline-block;
+    position: relative;
+}
+
+#ms_dropmenu_position {
+    position: absolute;
+    top: 120%;
+    left: -650%;
+}
+
 /* Regole next class */
+#nextclass {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 .ms_avatarclass img {
     max-width: 30px;
@@ -41,7 +75,7 @@ i {
     display: inline-block;
     width: 30px;
     height: 30px;
-    border: 1px solid grey;
+    border: 1px solid #8d8d8d;
     border-radius: 3px;
 }
 
@@ -51,4 +85,46 @@ i {
     top: 50%;
     left: 70%;
     transform: translate(-50%,-50%);
+}
+
+/* Regole liste interne */
+
+.ms_wrapperline {
+    margin: 5px;
+    border: 1px solid #cecccc;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.ms_wrapperline ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.ms_wrapperline li {
+    padding: 5px 0px;
+}
+/* Regole margini grey */
+
+.ms_bt_grey {
+    border-top: 1px solid #cecccc;
+}
+.ms_bb_grey {
+    border-bottom: 1px solid #cecccc;
+}
+
+/* Regola per div linea grey */
+.ms_divline {
+    height: 1px;
+    margin-left: -10px;
+    width: calc(100% + 15px);
+    background-color: #cecccc;
+}
+
+/* Bottoni done failed process */
+
+.ms_light_button {
+    padding: 0px 4px;
 }
