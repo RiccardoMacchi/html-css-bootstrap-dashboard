@@ -1,3 +1,7 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
 img {
     max-width: 100%;
 }
@@ -55,7 +59,7 @@ i {
 .ms_high {
     height: calc(100vh - 56px);
     overflow-y: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .ms_navbg {
@@ -111,7 +115,7 @@ i {
 /* Regole liste interne */
 
 .ms_wrapperline {
-    margin: 5px;
+    margin: 10px;
     border: 1px solid #cecccc;
     border-radius: 5px;
     padding: 5px;
@@ -178,5 +182,14 @@ i {
     border-radius: 5px;
 }
 
+/* Effetto hover classi */
 
-/* Come modificare margine tra colonne */
+#nextclass .row:hover{
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+#nextclass .row:first-child:hover{
+    background-color: white;
+    cursor: auto;
+}
